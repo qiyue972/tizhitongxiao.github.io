@@ -1,0 +1,125 @@
+.moxibustion-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.moxibustion-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.02); 
+}
+
+.moxibustion-modal-content {
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05); 
+    display: flex;
+    flex-direction: row; 
+    width: 90%; 
+    max-width: 1200px; 
+    height: 90%; 
+    max-height: none; 
+    overflow: visible; 
+    position: relative;
+}
+
+/* 关闭按钮样式 */
+.moxibustion-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ccc; /* 灰色背景 */
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.moxibustion-modal-left {
+    padding: 24px;
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.moxibustion-modal-right {
+    padding: 24px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.acupoint-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+.acupoint-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.acupoint-image {
+    width: 150px; 
+    height: 150px; 
+    margin-bottom: 10px;
+}
+
+.health-knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+.health-knowledge-grid.knowledge-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: white;
+    width: 100%; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.health-knowledge-grid.knowledge-item h4 {
+    margin-top: 0;
+}
+
+.health-knowledge-grid.knowledge-item p {
+    font-size: 13px; 
+    line-height: 1.3; 
+}
+
+/* 让标题和内容对齐 */
+.moxibustion-modal-left h3,
+.moxibustion-modal-right h3 {
+    margin-bottom: 10px;
+}

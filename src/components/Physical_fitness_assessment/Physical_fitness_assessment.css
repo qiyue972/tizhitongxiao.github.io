@@ -1,0 +1,147 @@
+/* 导航栏样式 - 精简高度版本 */
+.page-container > .navbar,
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px; /* 降低高度 */
+    min-height: 50px;
+    padding: 0.5rem 2rem; /* 减少上下padding */
+    background-color: #28a745;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1000; /* 确保在最上层 */
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.3rem 0; /* 减少padding */
+    position: relative;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* 减薄下划线 */
+    background-color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; /* 缩小间隙 */
+}
+
+.avatar {
+    width: 36px; /* 缩小头像 */
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 内容区域调整 */
+.page-container {
+    margin-top: 50px; /* 与导航栏高度匹配 */
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    max-width: none;  /* 新增：移除最大宽度限制 */
+    width: 95%;      /* 新增：设置相对宽度 */
+    margin: 0 auto;  /* 保持居中 */
+}
+
+/* 2. 修改评估容器样式 */
+.assessment-container {
+    width: 100%;     /* 修改：占满内容区域 */
+    max-width: 1400px; /* 修改：增大最大宽度 */
+    margin: 0 auto;
+    /* 其他原有样式保持不变 */
+}
+
+.assessment-container .tabs {
+    display: flex;
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+.assessment-container .tabs .tab-btn {
+    padding: 10px 20px; /* 稍减padding */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px; /* 稍小字体 */
+    color: #555;
+    transition: all 0.3s;
+}
+
+.assessment-container .tabs .tab-btn.active {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.tab-content {
+    padding: 25px;   /* 增加内边距 */
+    width: 100%;     /* 确保宽度充满 */
+}
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .navbar {
+        height: 45px; /* 移动端更矮 */
+        padding: 0.3rem 1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .avatar {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .page-container {
+        margin-top: 45px;
+    }
+    
+    .content {
+        padding: 1rem;
+    }
+    
+    .assessment-container .tabs {
+        flex-direction: column;
+    }
+    
+    .assessment-container .tabs .tab-btn {
+        width: 100%;
+        padding: 8px 15px;
+    }
+}

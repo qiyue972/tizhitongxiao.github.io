@@ -1,0 +1,99 @@
+html,
+body {
+    height: auto; /* 不再固定为100%，避免对二级界面布局产生限制 */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: var(--bg-image, url('../../../public/images/background.png'));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 去除flex布局相关设置，避免干扰二级界面布局 */
+    display: block; 
+}
+
+.register-container {
+    /* 不再设置固定宽度，改为最大宽度并自适应 */
+    max-width: 700px; 
+    width: 100%; 
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1; 
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.avatar-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.avatar-label {
+    cursor: pointer;
+}
+
+.avatar-frame {
+    /* 不再设置固定宽高，可根据内容自适应 */
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.avatar-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-input {
+    display: none;
+}
+
+.register-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #3CC684;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #33b377;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}

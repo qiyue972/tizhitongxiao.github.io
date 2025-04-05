@@ -1,0 +1,103 @@
+body {
+    background-image: var(--bg-image, url('../../../public/images/background.png'));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 去除flex布局相关设置，避免干扰二级界面布局 */
+    display: block; 
+    min-height: auto; /* 不再固定最小高度 */
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    margin-bottom: 20px; /* 调整 logo 与登录框的间距 */
+}
+
+.logo-large {
+    width: 250px; /* 调整 logo 的宽度 */
+    height: auto; /* 保持图片比例 */
+}
+
+.login-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    /* 去除最大宽度限制，改为自适应 */
+    width: 100%; 
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.register-button {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.register-button:hover {
+    color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.auto-login-group {
+    display: flex;
+    flex-direction: row; /* 改为水平排列 */
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 使子元素两端对齐，自动登录和按钮之间有间距 */
+}
+
+.auto-login-checkbox {
+    display: flex;
+    align-items: center; /* 使复选框和文字垂直居中 */
+}

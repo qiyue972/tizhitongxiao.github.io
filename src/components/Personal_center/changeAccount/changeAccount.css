@@ -1,0 +1,116 @@
+.change-account-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 350px; 
+    min-height: 250px; 
+}
+
+.modal-title {
+    margin-bottom: 12px;
+}
+
+.account-input,
+.password-input,
+.verification-code {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    background-color: #e8f5e9;
+    border: 1px solid #d4e6d8;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background-color: #dcebdf;
+}
+
+.login-method-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.sms-login-link {
+    text-align: center;
+    color: #3CC684;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.sms-login-link:hover {
+    text-decoration: underline;
+}
+
+.close-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.verification-code-input {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.verification-code {
+    flex: 2; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.get-verification-code-btn {
+    background-color: #007BFF; 
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 8px 10px; /* 减少垂直方向内边距 */
+    min-width: 80px; 
+    width: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* 设置固定高度，与输入框高度对齐 */
+}
+
+.get-verification-code-btn:hover {
+    background-color: #0056b3;
+}
+
+.account-password-login-link {
+    text-align: center;
+    color: #3CC684; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.account-password-login-link:hover {
+    text-decoration: underline;
+}

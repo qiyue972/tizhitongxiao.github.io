@@ -1,0 +1,151 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3CC684;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; /* 确保内边距不会影响宽度 */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* 增加身份文本和头像之间的间距 */
+  margin-right: 2rem; /* 增加头像与屏幕右边的间距 */
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.page-container {
+  margin-top: 60px;
+}
+
+.content {
+  padding: 2rem;
+}
+
+/* 下拉框容器样式 */
+.selector-container {
+  margin: 0.3rem 0; /* 适当减小容器上下边距为0.3rem，左右边距0 */
+}
+
+/* 体质选择下拉框样式 */
+.体质选择下拉框 {
+  padding: 0.4rem; /* 适当减小下拉框内边距为0.4rem */
+  font-size: 0.9rem; /* 适当减小下拉框内文字字体大小为0.9rem */
+  border: 2px solid #3CC684; /* 下拉框边框，2px绿色实线 */
+  border-radius: 4px; /* 下拉框边框圆角4px */
+  width: 200px; /* 下拉框宽度200px */
+}
+
+/* 推荐内容区域样式（网格布局） */
+.recommendation-content {
+  display: grid; /* 使用网格布局 */
+  gap: 0.8rem; /* 适当调整网格元素之间的间距为0.8rem */
+}
+
+/* 每个内容板块（如养生知识、艾灸穴位等）样式 */
+.section {
+  background-color: #f5f5f5; /* 板块背景颜色 */
+  padding: 0.6rem; /* 适当调整板块内边距为0.6rem */
+  border-radius: 8px; /* 板块边框圆角8px */
+  border-left: 4px solid #3CC684; /* 板块左侧绿色竖线边框，4px粗 */
+  padding-left: 0.6rem; /* 板块内内容左内边距0.6rem，使内容与左侧竖线产生间距 */
+}
+
+/* 减小板块内段落上下间距 */
+.section p {
+  margin: 0.15rem 0; /* 进一步减小段落上下间距为0.15rem */
+}
+
+/* 养生知识条目样式 */
+.tip-item {
+  margin-bottom: 0.15rem; /* 进一步减小条目底部边距为0.15rem */
+  padding: 0.15rem 0; /* 进一步减小条目上下内边距为0.15rem，左右内边距0 */
+}
+
+/* 艾灸穴位条目样式 */
+.acupoint-item {
+  margin-bottom: 0.15rem; /* 进一步减小条目底部边距为0.15rem */
+  padding: 0.15rem; /* 进一步减小条目内边距为0.15rem */
+  border-radius: 4px; /* 条目边框圆角4px */
+}
+
+/* 板块标题样式 */
+.section h3 {
+  margin-bottom: 0.15rem; /* 进一步减小标题与下方内容间距为0.15rem */
+  font-size: 1.1rem; /* 适当设置标题字体大小为1.1rem */
+}
+
+/* 穴位标题样式 */
+.acupoint-item h4 {
+  margin-bottom: 0.1rem; /* 进一步减小标题与下方描述间距为0.1rem */
+  font-size: 1rem; /* 适当设置穴位标题字体大小为1rem */
+}
+
+/* 疗法过程样式 */
+.therapy-process {
+  line-height: 1.5; /* 适当减小行高为1.5，控制文本行间距 */
+}
+
+/* 加载状态样式 */
+.loading {
+  color: #666; /* 加载状态文字颜色 */
+  font-style: italic; /* 加载状态文字斜体 */
+  margin: 0.5rem 0; /* 设置加载状态上下边距为0.5rem */
+}
+
+/* 错误信息样式 */
+.error-message {
+  color: #ff4444; /* 错误信息文字颜色 */
+  margin: 0.8rem 0; /* 适当减小错误信息上下边距为0.8rem */
+}
+
+/* 服务状态容器样式 */
+.service-status {
+  margin: 0.3rem 0; /* 适当减小服务状态容器上下边距为0.3rem */
+  padding: 0.3rem; /* 适当减小服务状态容器内边距为0.3rem */
+}
+
+/* 服务在线状态样式 */
+.status-online {
+  color: #3CC684; /* 在线状态文字颜色 */
+  font-weight: bold; /* 在线状态文字粗体 */
+}
+
+/* 服务离线状态样式 */
+.status-offline {
+  color: #e74c3c; /* 离线状态文字颜色 */
+  font-weight: bold; /* 离线状态文字粗体 */
+}
